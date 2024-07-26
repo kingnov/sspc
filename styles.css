@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #003d7d;
+    --secondary-color: #f5a623;
+    --text-color: #333;
+    --background-color: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    max-height: 50px;
+    margin-right: 1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+button#theme-toggle {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+body.dark {
+    --text-color: #ddd;
+    --background-color: #333;
+}
